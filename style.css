@@ -522,13 +522,13 @@ footer {
 @media (max-width: 1024px) {
     body, html {
         font-size: calc(100vw/1024 * 10);
-        /* overflow-x: hidden; */
+        overflow-x: hidden;
     }
     header {
         height: 8rem;
     }
     .logo {
-        flex-basis: 80%;
+        flex-basis: 90%;
         margin: 2rem;
     }
     .bar {
@@ -743,8 +743,26 @@ footer {
     }
     .first-form {
         display: flex; 
-        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2rem;
         justify-content: center;
+        align-items: center;
+    }
+    .input-list {
+        width: 60%;
+        height: 4rem;
+        font-weight: 400;
+        font-size: 1.3rem;
+        padding-left: 1.2rem;
+        box-sizing: border-box;
+        
+    }
+    .button-list {
+        width: 25%;
+        height: 4rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        padding: 0.5em;
     }
     
     .ellipse-section {
@@ -784,7 +802,6 @@ footer {
     }
     .flex1-content1, .flex1-content2 {
         max-width: 90%;
-        /* max-height: 60rem; */
         flex-shrink: 1;
     }
     .flex4-container {
@@ -887,24 +904,6 @@ footer {
     .footer_fonta {
         order: 3;
     }
-    
-    
-    
+     
       
 }
-/* @media (max-width: 360px) {
-    .button-list {
-        background-color: #8D6CFA;
-        border: 1px solid #8D6CFA;
-        color: #fff;
-        border-radius: 32px;
-        flex-basis: 31%;
-        height: 2.6rem;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 0.9rem;
-        box-sizing: border-box;
-        text-align: center;
-        margin-top: 10px;
-    }
-} */
