@@ -45,6 +45,9 @@ header {
     margin-left: 3.5rem;
     padding: 1.6rem 4rem;
 }
+input[type='checkbox'] {
+    display: none;
+}
 .toggle-btn {
     width: 5rem;
     height: 1.8rem;
@@ -536,7 +539,6 @@ footer {
         padding: 1rem 0 1rem 0;
         margin: 0;
         display: none;
-        transition: 1s all linear;
     }
     .nav-link {
         font-size: 1.9rem;
@@ -561,7 +563,7 @@ footer {
         top: 3rem;
         display: flex;
     }
-    .toggle-btn:hover .bar {
+    .toggle-btn:checked .bar {
         display: block;
     }
     #hero-section {
@@ -696,40 +698,14 @@ footer {
         background-color: #ffffff30;
         z-index: 1000;
     }
-    .logo {
-        flex-basis: 90%;
-        margin: 2rem;
-    }
-    .bar {
-        background-color: #ffffff30;
-        padding: 1rem 0 1rem 0;
-        margin: 0;
-        display: none;
-    }
     .nav-link {
         font-size: 1.5rem;
         line-height: 2.4rem;
         margin-left: -4.5rem;
     }
-    .nav-list {
-        display: block;
-    }
     .nav-btn {
-        color: #fff;
-        border: 1px solid #8d6cfa;
-        border-radius: 10rem;
-        background-color: #8d6cfa;
-        margin-left: 2rem;
         padding: 0.8rem 1.4rem;
         font-weight: 200;
-    }
-    .toggle-btn {
-        position: absolute;
-        right: 0.4rem;
-        top: 3rem;
-    }
-    .toggle-btn:hover .bar {
-        display: block;
     }
 
     #hero-section {
