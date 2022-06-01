@@ -3,7 +3,6 @@ body, html {
     padding: 0;
     background-color: #F8F8FD;
     font-size: 62.5%;
-    /* overflow-x: hidden; */
 }
 header {
     width: 100%;
@@ -535,28 +534,38 @@ footer {
         margin: 2rem;
     }
     .bar {
-        background-color: #f1f1f7;
-        padding: 1rem 0 1rem 0;
+        background-color: #ffffff25;
+        padding: 1rem 0 2rem 0;
         margin: 0;
         display: none;
-        transition: 1ms all ease-in-out;
+        animation-name: navAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-in-out;
+        animation-delay: 1ms;
     }
+    @keyframes navAnimation {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(10%);
+        }
+    }
+
     .nav-link {
-        font-size: 1.9rem;
-        line-height: 2.9rem;
+        font-size: 2.4rem;
+        padding-bottom: 0.2rem;
+        line-height: 3.4rem;
         margin-left: -4.5rem;
     }
     .nav-list {
         display: block;
     }
     .nav-btn {
-        color: #fff;
-        border: 1px solid #8d6cfa;
-        border-radius: 10rem;
-        background-color: #8d6cfa;
         margin-left: 2rem;
-        padding: 1rem 1.6rem;
-        font-size: 1.6rem;
+        padding: 1em 1.6em;
+        font-size: 1.8rem;
     }
     .toggle-btn {
         position: absolute;
@@ -699,16 +708,6 @@ footer {
         background-color: #ffffff30;
         z-index: 1000;
     }
-    .nav-link {
-        font-size: 1.5rem;
-        line-height: 2.4rem;
-        margin-left: -4.5rem;
-    }
-    .nav-btn {
-        padding: 0.8rem 1.4rem;
-        font-weight: 200;
-    }
-
     #hero-section {
         display: flex;
         flex-direction: column-reverse;
@@ -717,6 +716,9 @@ footer {
         text-align: center;
         align-items: center;
         flex-wrap: wrap;
+    }
+    .hero-para {
+        margin-left: -3.5rem;
     }
     .first-form {
         display: flex; 
