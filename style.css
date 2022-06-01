@@ -522,7 +522,7 @@ footer {
 @media (max-width: 1024px) {
     body, html {
         font-size: calc(100vw/1024 * 10);
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     header {
         height: 8rem;
@@ -533,10 +533,9 @@ footer {
     }
     .bar {
         background-color: #f1f1f7;
-        /* background-color: red; */
         padding: 1rem 0 1rem 0;
         margin: 0;
-        display: block;
+        display: none;
         transition: 1s all linear;
     }
     .nav-link {
@@ -562,7 +561,7 @@ footer {
         top: 3rem;
         display: flex;
     }
-    .toggle-btn:focus .bar {
+    .toggle-btn:hover .bar {
         display: block;
     }
     #hero-section {
