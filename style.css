@@ -42,7 +42,7 @@ header {
     border-radius: 10rem;
     background-color: #8d6cfa;
     margin-left: 3.5rem;
-    padding: 1.6rem 4rem;
+    padding: 1.2em 2.3em;
 }
 input[type='checkbox'] {
     display: none;
@@ -74,10 +74,10 @@ input[type='checkbox'] {
     border: 1px solid #8D6CFA;
     color: #fff;
     border-radius: 3.2rem;
-    width: 16.1rem;
-    height: 5.6rem;
+    /* width: 16.1rem;
+    height: 5.6rem; */
+    padding: 1.2em 2.3em;
     font-style: normal;
-    font-weight: 600;
     font-size: 1.4rem;
     line-height: 2.4rem;
     margin-left: 1rem;
@@ -93,7 +93,7 @@ input[type='checkbox'] {
     font-size: 1.4rem;
     line-height: 2.4rem;
     opacity: 0.8;
-    padding-left: 1.2rem;
+    padding-left: 1.2em;
 }
 .ellipse-section {
     position: relative;
@@ -285,29 +285,14 @@ h3 {
     display: flex; 
     flex-direction: row;
     gap: 1rem;
-}
-.flex2-content {
-    border: 1px solid #fff;
-    background-color: #fff;
-    width: 22.941rem;
-    height: 5.633rem;
-    text-align: center;
-    padding-top: 3rem;
-   
+    overflow-x: scroll;
 }
 .flex3 {
     display: flex; 
     flex-direction: row; 
     margin-top: 5rem;
     gap: 1rem;
-}
-.flex3-content {
-    border: 1px solid #fff;
-    background-color: #fff;
-    width: 22.941rem;
-    height: 6.633rem;
-    text-align: center;
-    padding-top: 2.5rem;
+    overflow-x: scroll;
 }
 .flex4-header {
     text-align: center; 
@@ -323,7 +308,7 @@ h3 {
 .flex4-content {
     border: 1px solid #fff;
     background-color: #fff;
-    width: 36rem;
+    min-width: 36rem;
     box-sizing: border-box;
     height: 34.7rem;
     border-radius: 2rem;
@@ -526,18 +511,19 @@ footer {
         font-size: calc(100vw/1024 * 10);
         overflow-x: hidden;
     }
-    header {
-        height: 8rem;
-    }
     .logo {
         flex-basis: 90%;
         margin: 2rem;
     }
     .bar {
-        background-color: #ffffff25;
-        padding: 1rem 0 2rem 0;
+        background-color: #ffffff35;
+        padding: 0rem 5rem 0rem 0;
         margin: 0;
         display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+        height: 100vh;
         animation-name: navAnimation;
         animation-duration: 1s;
         animation-fill-mode: forwards;
@@ -546,24 +532,22 @@ footer {
     }
     @keyframes navAnimation {
         0% {
-            transform: translateY(0);
+            transform: translatex(10%);
         }
         100% {
-            transform: translateY(10%);
+            transform: translatex(0);
         }
     }
 
     .nav-link {
         font-size: 2.4rem;
-        padding-bottom: 0.2rem;
+        padding-bottom: 0.5rem;
         line-height: 3.4rem;
-        margin-left: -4.5rem;
     }
     .nav-list {
         display: block;
     }
     .nav-btn {
-        margin-left: 2rem;
         padding: 1em 1.6em;
         font-size: 1.8rem;
     }
@@ -574,7 +558,7 @@ footer {
         display: flex;
     }
     .nav_toggle:checked + div.bar {
-        display: block;
+        display: flex;
     }
     #hero-section {
         margin-top: 15rem;
@@ -590,18 +574,11 @@ footer {
     }
     .input-list {
         width: 60%;
-        height: 4rem;
         font-weight: 400;
         font-size: 1.3rem;
-        padding-left: 1.2rem;
+        padding-left: 1.2em;
         box-sizing: border-box;
         
-    }
-    .button-list {
-        flex-basis: 31%;
-        height: 4rem;
-        font-weight: 400;
-        font-size: 1.5rem;
     }
     .flying-phn {
         width: 80%;
@@ -629,6 +606,12 @@ footer {
         width: 92%;
         height: auto;
         padding: 3.3rem 1rem 0 3rem;
+    }
+    .portfolio-text {
+        margin: 6.2rem 6rem 0 4rem;
+    }
+    .invest-text {
+        margin: 2.8rem 10rem 0 4rem;
     }
     #rectangle-box {
         border-radius: 2rem;
@@ -678,9 +661,6 @@ footer {
         justify-content: flex-start;
         padding: 10rem 0 5rem 8rem;
     }
-    .flex2, .flex3 {
-        overflow-x: scroll;
-    }
      
 
 }
@@ -697,7 +677,6 @@ footer {
 }
 @media (max-width: 650px) {
     body, html {
-        /* overflow-x: hidden; */
         font-size: calc(100vw/650 * 10);
     }
     header {
@@ -729,19 +708,11 @@ footer {
     }
     .input-list {
         width: 60%;
-        height: 4rem;
         font-weight: 400;
         font-size: 1.3rem;
         padding-left: 1.2rem;
         box-sizing: border-box;
         
-    }
-    .button-list {
-        width: 25%;
-        height: 4rem;
-        font-weight: 400;
-        font-size: 1.6rem;
-        padding: 0.5em;
     }
     
     .ellipse-section {
